@@ -1,0 +1,20 @@
+{
+  "name": "minifierapp",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/main.js"
+  },
+  "keywords": ["minifier", "minify", "optimization", "compress", "build", "css", "js"],
+  "author": "Ali Aslan",
+  "license": "MIT",
+  "type": "module",
+  "description": "A simple optimization application that minifies CSS and JS files.",
+  "dependencies": {
+    "@inquirer/prompts": "^7.2.3",
+    "chalk": "^5.4.1",
+    "clean-css": "^5.3.3",
+    "terser": "^5.37.0"
+  }
+}
