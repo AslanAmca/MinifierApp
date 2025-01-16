@@ -40,4 +40,4 @@ If you would like to contribute, please send a pull request or open an issue.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENCE) MIT License.
