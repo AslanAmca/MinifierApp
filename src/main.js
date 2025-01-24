@@ -33,12 +33,13 @@ async function getFilename(fileType) {
 		validate: (value) => validateFilename(value, fileType)
 	});
 
-	const extname = path.extname(filename);
+	if (filename.endsWith(`.min.${fileType}`))
+		return filename;
 
-	if (extname === `.${fileType}`)
+	if (filename.endsWith(`.${fileType}`))
 		return filename.replace(`.${fileType}`, `.min.${fileType}`);
 
-	return filename + `.min.${fileType}`;
+	return `${filename}.min.${fileType}`;
 }
 
 async function main() {
